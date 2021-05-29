@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Project 78</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>My Family Book</h1>
+        <img src="https://i.postimg.cc/prfg2HWS/download.png" id="family_photo">
+        <p id="Family_p">Nikunj Bansal</p>
+        <button onclick="update()">Next</button>
+        </center>
+<script>
+    var images =
+    [
+   "https://i.postimg.cc/prfg2HWS/download.png", "https://i.postimg.cc/BQJzxRQq/images.jpg", 
+   "https://i.postimg.cc/TPvgbvf0/mother.png", "https://i.postimg.cc/J00k815r/father.png"
+    ];
+    var names = 
+    ["Nikunj Bansal", "Arshi Bansal", "Nikita Bansal", "Akhil Bansal"];
+var i = 0;
+function update()
+{
+i++;
+var number_of_family_in_array = 4;
+if(i > number_of_family_in_array )
+{
+ i = 0;
+}
+var updateimage = images[i];
+var updatenames = names[i];
+document.getElementById("family_photo").src=updateimage;
+document.getElementById("Family_p").innerHTML=updatenames;
+}
+
+
+</script>
+</body>
+</html>
+   
